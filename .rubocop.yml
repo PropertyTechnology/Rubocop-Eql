@@ -1,5 +1,3 @@
-require: rubocop-rspec
-
 AllCops:
   TargetRubyVersion: 2.3
   Include:
@@ -36,4 +34,3 @@ Style/Send:
 
 Style/SymbolArray:
   Enabled: true
-  
