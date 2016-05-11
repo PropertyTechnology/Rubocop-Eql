@@ -6,7 +6,7 @@ require 'rubocop/eql/version'
 Gem::Specification.new do |spec|
   spec.name          = "rubocop-eql"
   spec.version       = RuboCop::Eql::VERSION
-  spec.authors       = ["James"]
+  spec.authors       = ["Jaimerson Araújo"]
   spec.email         = ["jaimersonaraujo@gmail.com"]
 
   spec.summary       = %q{Rubocop cop for detecting use of == and recomending eql?}

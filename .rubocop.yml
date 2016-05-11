@@ -1,3 +1,5 @@
+require: rubocop-eql
+
 AllCops:
   TargetRubyVersion: 2.3
   Include:
@@ -34,4 +36,6 @@ Style/Send:
 
 Style/SymbolArray:
   Enabled: true
-  
+
+Style/FileName:
+  Enabled: false

@@ -13,7 +13,7 @@ module CopHelper
   end
 
   def inspect_source(cop, source, file = nil)
-    if source.is_a?(Array) && source.size == 1
+    if source.is_a?(Array) && source.size.eql?(1)
       raise "Don't use an array for a single line of code: #{source}"
     end
     RuboCop::Formatter::DisabledConfigFormatter.config_to_allow_offenses = {}
