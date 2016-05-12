@@ -1,4 +1,5 @@
 require: rubocop-rspec
+require: rubocop-eql
 
 AllCops:
   TargetRubyVersion: 2.3
@@ -36,4 +37,7 @@ Style/Send:
 
 Style/SymbolArray:
   Enabled: true
-  
+
+Style/FileName:
+  Enabled: false
+

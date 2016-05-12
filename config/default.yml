@@ -1,0 +1,3 @@
+Eql/EqualOperatorInsteadOfEql:
+  Description: 'Use `.eql?` instead of `==` for comparisons'
+  Enabled: true

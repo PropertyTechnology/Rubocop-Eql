@@ -1,6 +1,7 @@
 # Rubocop-Eql
 A matcher for Rubocop that detects == and suggests .eql?
 
+## Getting Started
 Install all dependencies as normal
 ```
 $ bundle install
@@ -31,7 +32,7 @@ $ bin/console
 ## Installation
 You can install the gem manually by running
 ```
-$ gem install /path/to/built/gem
+$ gem install rubocop-eql
 ```
 Or
 ```
@@ -40,25 +41,20 @@ $ bundle exec rake install
 
 
 ## Usage
-[FILL IN HERE]
+To use the cops along with the default cops, add the following to `.rubocop.yml`
+
+```
+require: rubocop-eql
+```
 
 
 ## Project Structure
-[BELOW IS AN EXAMPLE, REPLACE WITH REAL DATA]
-### General
-* `blm/blm.rb` – Handles reading BLM data from a file, string, or hash, and
-parsing it for Entries.
 
-### Entries
-* `blm/entry.rb` – Main class allowing retrieval of BLM attributes from an
-entry, as well as helper methods for commonly used combinations of BLM
-attributes.
-* `blm/specification.yaml` – BLM value rules and restrictions expressed in
-YAML format.
-* `blm/coder.rb` – Class responsible for encoding and decoding BLM attributes
-* `blm/codings/` – Contains all mappings (in YAML format) from BLM encoded
-values to their human readable forms.
-
+* `config/default.yml` - Default parameters for the cops.
+* `lib/rubocop-eql.rb` - Entry point for the extension, with all requires.
+* `lib/rubocop/eql/inject.rb` - Monkeypatch for RuboCop to accept a plugin
+structure.
+* `lib/rubocop/cop/*` - Cops definitions.
 
 ## Contributing
 We use Github Flow, you can read more about it on these pages
