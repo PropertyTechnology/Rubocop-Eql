@@ -1,9 +1,15 @@
 # Rubocop-Eql
 A matcher for Rubocop that detects == and suggests .eql?
 
+## Getting Started
 Install all dependencies as normal
 ```
 $ bundle install
+```
+
+Execute tests as you develop with
+```
+$ guard
 ```
 
 Before submitting a PR run all tests with
