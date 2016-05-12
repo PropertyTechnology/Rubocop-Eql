@@ -1,5 +1,8 @@
 # encoding: utf-8
 # frozen_string_literal: true
+#
+# This is directly from https://github.com/bbatsov/rubocop/
+# Rubocop does not yet provide spec helpers for plugins
 
 require 'tempfile'
 

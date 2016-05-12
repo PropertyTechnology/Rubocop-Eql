@@ -34,9 +34,9 @@ You can install the gem manually by running
 ```
 $ gem install rubocop-eql
 ```
-Or
-```
-$ bundle exec rake install
+Or add it to your Gemfile
+```ruby
+gem 'rubocop-eql', github: 'AdvancetoGO/Rubocop-Eql'
 ```
 
 
