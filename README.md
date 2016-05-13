@@ -1,6 +1,7 @@
 # Rubocop-Eql
 A matcher for Rubocop that detects == and suggests .eql?
 
+
 ## Getting Started
 Install all dependencies as normal
 ```
@@ -30,10 +31,17 @@ $ bin/console
 
 
 ## Installation
-You can install the gem manually by running
+You can build and install the gem by running
 ```
-$ gem install rubocop-eql
+$ rake install
 ```
+
+Or install the gem manually by running
+```
+$ rake build
+$ gem install pkg/rubocop-eql-{VERSION}.gem
+```
+
 Or add it to your Gemfile
 ```ruby
 gem 'rubocop-eql', github: 'AdvancetoGO/Rubocop-Eql'
